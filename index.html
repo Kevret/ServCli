@@ -1,11 +1,3 @@
-<?php
-    session_start();
-
-    if(isset($_SESSION['usuario'])){
-        header("location: Principal.php");
-    }
-    
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +33,7 @@
                 <!--Formulario de Login y registro-->
                 <div class="contenedor__login-register">
                     <!--Login-->
-                    <form action="php/login_usuario_b.php" method="POST" class="formulario__login">
+                    <form action="Principal.php"  class="formulario__login">
                         <h2>Iniciar Sesión</h2>              
 <body>
                         <input type="text" placeholder="Correo Electronico" name = "correo">
@@ -51,7 +43,7 @@
                     </form>
 
                     <!--Register-->
-                    <form action="php/registro_usuario_b.php" method="POST" class="formulario__register">
+                    <form action="Principal.php"  class="formulario__register">
                         <h2>Regístrarse</h2>
                         <input type="text" placeholder="Nombre completo" name="nombre_completo">
                         <input type="email" placeholder="Correo Electronico" name="correo">
